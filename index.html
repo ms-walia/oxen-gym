@@ -7,8 +7,9 @@
 <meta name="description" content="Oxen Fitness Luxury Gym in VR Ambarsar, Amritsar: modern equipment, supportive trainers, CrossFit and Zumba, plus jacuzzi, steam room and ice bath. Open 5 AM to 11 PM, Monday to Saturday.">
 <meta property="og:title" content="Oxen Fitness Luxury Gym · Amritsar">
 <meta property="og:description" content="Train hard, recover like a pro. Jacuzzi, steam and ice bath inside VR Ambarsar, Amritsar.">
-<meta property="og:image" content="images/hero.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111'/%3E%3Cpath d='M14 18c0 10 6 14 12 14M50 18c0 10-6 14-12 14' stroke='%23e3262b' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='40' r='10' fill='%23e3262b'/%3E%3C/svg%3E">
+<meta property="og:image" content="images/logo.png">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&family=Anton&display=swap">
@@ -76,7 +77,8 @@ html.is-phone .wrap { padding-left: max(20px, env(safe-area-inset-left, 0px)); p
 .nav.is-tucked { transform: translateY(-100%); }
 .nav__in { display: flex; align-items: center; gap: 24px; height: var(--nav); }
 .brand { display: flex; align-items: center; gap: 12px; color: #fff; text-decoration: none; }
-.brand__mark { width: 46px; height: 46px; flex: none; transition: transform .35s cubic-bezier(.3,1.6,.5,1); }
+.brand__mark { width: 50px; height: 50px; flex: none; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px rgba(255,255,255,.18); transition: transform .35s cubic-bezier(.3,1.6,.5,1); }
+.foot .brand__mark { width: 64px; height: 64px; box-shadow: 0 6px 16px rgba(0,0,0,.18); }
 .brand:hover .brand__mark { transform: rotate(-10deg) scale(1.08); }
 .brand__name { display: grid; line-height: 1; }
 .brand__name b { font-family: var(--display); font-weight: 400; font-size: 26px; letter-spacing: .06em; }
@@ -93,7 +95,7 @@ html.is-phone .nav__links, html.is-phone .nav__join { display: none; }
 html.is-phone .nav__menu { display: grid; place-items: center; }
 html.is-phone .nav__in { gap: 10px; height: 66px; }
 html.is-phone .nav__tools { margin-left: auto; gap: 8px; }
-html.is-phone .brand__mark { width: 40px; height: 40px; }
+html.is-phone .brand__mark { width: 42px; height: 42px; }
 html.is-phone .brand__name b { font-size: 22px; }
 html.is-phone .brand__name small { display: none; }
 html.is-phone .nav .status { padding: 5px 9px; font-size: 10px; }
@@ -347,14 +349,11 @@ html.is-phone .fab { padding: 0; width: 54px; justify-content: center; }
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="ox" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#111" stroke="#e3262b" stroke-width="3"/><path d="M13 19c0 11 7 15 13 15M51 19c0 11-7 15-13 15" stroke="#fff" stroke-width="4.5" fill="none" stroke-linecap="round"/><path d="M22 30h20l-3 16c-1 4-4 7-7 7s-6-3-7-7z" fill="#e3262b"/><circle cx="27.5" cy="36" r="2" fill="#111"/><circle cx="36.5" cy="36" r="2" fill="#111"/><ellipse cx="32" cy="47" rx="5" ry="3" fill="#111" opacity=".35"/></symbol>
-</svg>
 
 <header class="nav" id="nav">
   <div class="wrap nav__in">
     <a class="brand" href="#top" aria-label="Oxen Fitness, back to the top">
-      <svg class="brand__mark" aria-hidden="true"><use href="#ox"/></svg>
+      <img class="brand__mark" src="images/logo.png" alt="" width="46" height="46">
       <span class="brand__name"><b>OXEN</b><small>FITNESS · LUXURY GYM</small></span>
     </a>
     <ul class="nav__links">
@@ -373,7 +372,7 @@ html.is-phone .fab { padding: 0; width: 54px; justify-content: center; }
 </header>
 <div class="sheet" id="sheet" hidden>
   <div class="sheet__top">
-    <span class="brand"><svg class="brand__mark" aria-hidden="true"><use href="#ox"/></svg><span class="brand__name"><b>OXEN</b></span></span>
+    <span class="brand"><img class="brand__mark" src="images/logo.png" alt="" width="46" height="46"><span class="brand__name"><b>OXEN</b></span></span>
     <button class="nav__menu" type="button" id="sheet-close" aria-label="Close the menu" style="display:grid"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
   <ul class="sheet__links">
@@ -605,7 +604,7 @@ html.is-phone .fab { padding: 0; width: 54px; justify-content: center; }
 <footer class="foot">
   <div class="wrap foot__grid">
     <div class="foot__brand">
-      <a class="brand" href="#top"><svg class="brand__mark" aria-hidden="true"><use href="#ox"/></svg><span class="brand__name"><b>OXEN</b><small>FITNESS · LUXURY GYM</small></span></a>
+      <a class="brand" href="#top"><img class="brand__mark" src="images/logo.png" alt="" width="46" height="46"><span class="brand__name"><b>OXEN</b><small>FITNESS · LUXURY GYM</small></span></a>
       <p>© 2026 by Oxen Fitness Luxury Gym</p>
       <p style="user-select:all">079738 15708</p>
       <div class="foot__social">
